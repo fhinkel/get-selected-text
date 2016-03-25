@@ -1,10 +1,18 @@
 {
   "name": "get-selected-text",
   "version": "1.0.0",
-  "description": "",
+  "description": "Get selection or full line",
   "main": "index.js",
+  "dependencies": {
+    "set-caret-position": "3.0.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fhinkel/get-selected-text.git"
   },
   "contributors": [
     {
@@ -21,7 +29,8 @@
     }
   ],
   "license": "MIT",
-  "dependencies": {
-    "set-caret-position": "2.0.0"
-  }
+  "bugs": {
+    "url": "https://github.com/fhinkel/get-selected-text/issues"
+  },
+  "homepage": "https://github.com/fhinkel/get-selected-text#readme"
 }
