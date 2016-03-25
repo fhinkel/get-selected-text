@@ -1,5 +1,5 @@
-module.exports = function (inputField) {
-    var element = document.getElementById(inputField);
+module.exports = function (id) {
+    var element = document.getElementById(id);
     var str = element.value,
         start = element.selectionStart,
         end = element.selectionEnd,
@@ -16,10 +16,10 @@ module.exports = function (inputField) {
             end = endPos;
         } else {
             str = element.value + "\n";
-            element.val(str);
+            element.value = str;
             end = str.length - 1; // position of last \n 
         }
-        require('set-caret-position')(inputField, end + 1);
+        require('set-caret-position')(id, end + 1);
     }
     return str.slice(start, end) + "\n";
 };
