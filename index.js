@@ -19,7 +19,7 @@ module.exports = function (inputField) {
             element.val(str);
             end = str.length - 1; // position of last \n 
         }
-        require('set-caret-position')(element, end + 1);
+        require('set-caret-position')(inputField, end + 1);
     }
     return str.slice(start, end) + "\n";
 };
