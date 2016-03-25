@@ -1,6 +1,6 @@
 {
   "name": "get-selected-text",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get selection or full line",
   "main": "index.js",
   "dependencies": {
